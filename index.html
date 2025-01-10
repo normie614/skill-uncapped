@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>SkillUncapped</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+</head>
+<body>
+    <div class="url-container">
+        <label for="url">URL: </label>
+        <input style="width: 300px;" id="url" onkeyup="if (event.key =='Enter') stream()" placeholder="https://www.skill-capped.com/lol/commentaries/p1qcnwqt75" />
+        <button class="stream-button" onclick="stream()">Stream</button>
+        <hr>
+    </div>
+    
+    <div class="container">
+        <div class="form-group">
+            <label for="resolution">Select Resolution:</label>
+            <select id="resolution" class="form-control">
+                <option value="1500">720p</option>
+                <option value="2500">1080p</option>
+                <option value="4500">4k</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="videoName">Video Name:</label>
+            <input type="text" id="videoName" class="form-control" placeholder="Enter video name (without extension)" />
+        </div>
+        <button class="button-42" onclick="downloadAndMergeVideo()">Download</button>
+    </div>
+
+    <div class="progress-bar">
+        <div class="progress-bar-fill"></div>
+    </div>
+    <div id="status" class="status-message"></div>
+
+    <video style="display: block; margin-top: 16px; margin-bottom: 16px;" height="720" width="1280" id="video" controls autoplay crossorigin="anonymous"></video>
+
+    <p>1. Make sure Allow CORS extension is on and copy-paste the video link to URL box</p>
+    <p>2. Click Stream to watch in browser, or select resolution and enter video name to download</p>
+    <p>3. Click Download to save the video</p>
+    <p>Note: For commentary videos, add <span class="highlight">/qqq</span> to the URL</p>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+body {
+    background-color: #111;
+    color: #fff;
+    font-family: -apple-system, system-ui, "Segoe UI", "Liberation Sans", sans-serif;
+    padding: 20px;
+}
+
+input, select, .form-control {
+    background-color: #333;
+    color: #fff;
+    padding: 8px;
+    border: 1px solid #555;
+    border-radius: 4px;
+    margin: 5px 0;
+}
+
+hr {
+    background-color: #777;
+}
+
+#url {
+    flex: 0;
+    height: 40px;
+    padding: 0 10px;
+    box-sizing: border-box; 
+}
+
+.status-message {
+    color: #0095ff;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px 0;
+    display: none;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    background-color: #0095ff;
+    transition: width 0.3s ease-in-out;
+    width: 0%;
+}
+
+.button-42 {
+    background-color: initial;
+    background-image: linear-gradient(-180deg, #058ef0, #055e9e);
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    outline: 0;
+    overflow: hidden;
+    padding: 0 20px;
+    pointer-events: auto;
+    position: relative;
+    text-align: center;
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: top;
+    white-space: nowrap;
+    z-index: 9;
+    border: 0;
+    transition: box-shadow .2s;
+}
+
+.button-42:hover {
+    box-shadow: rgba(0, 160, 253, 0.5) 0 3px 8px;
+}
+
+.stream-button {
+    background-color: initial;
+    background-image: linear-gradient(-180deg, #058ef0, #055e9e);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+    color: #FFFFFF;
+    cursor: pointer;
+    outline: 0;
+    overflow: hidden;
+    pointer-events: auto;
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-user-select: none;
+    white-space: nowrap;
+    z-index: 9;
+    border: 0;
+    transition: box-shadow .2s;
+    border-radius: 6px;
+    height: 41px;
+    line-height: 0px;
+    padding: 0 20px;
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+
+.highlight {
+    color: #0095ff;
+    padding: 2px 4px;
+    border-radius: 2px;
+}
